@@ -768,6 +768,9 @@ console.log("Running Apos Bot!");
                             drawCircle(allPossibleThreats[i].x, allPossibleThreats[i].y, splitDangerDistance, 0);
                             drawCircle(allPossibleThreats[i].x, allPossibleThreats[i].y, splitDangerDistance + shiftDistance, 6);
                         } else {
+                            if(canSplit(allPossibleThreats[i],player[k])){
+                                drawCircle(allPossibleThreats[i].x, allPossibleThreats[i].y, 10, 3);
+                            }
                             drawCircle(allPossibleThreats[i].x, allPossibleThreats[i].y, normalDangerDistance, 3);
                             drawCircle(allPossibleThreats[i].x, allPossibleThreats[i].y, normalDangerDistance + shiftDistance, 6);
                         }
